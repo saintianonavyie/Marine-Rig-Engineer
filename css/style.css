@@ -1,0 +1,1121 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    background-color: #fff;
+    font-size: 20px;
+    letter-spacing: 1;
+    font-weight: 300;
+    font-family: Arial;
+    margin: 0;
+}
+
+/*----------------------------------------------------*/
+/*REUSABLE COMPONENT*/
+/*----------------------------------------------------*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+                          
+
+a i{
+    display: flex;
+    font-size: 130%;
+    float: right;
+}
+
+.sign-up {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*----------------------------------------------------*/
+/*HEADINGS*/
+/*----------------------------------------------------*/
+
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    color: rgb(187, 187, 42);
+    font-size: 180%;
+    text-align: center;
+    margin: 20% 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 150%;
+    padding: 0;
+    color: rgb(108, 101, 1);
+}
+
+h3 {
+    font-size: 75%;
+    margin-bottom: 5px;
+}
+
+/*----------------------------------------------------*/
+/*ICONS*/
+/*----------------------------------------------------*/
+
+
+/*----------------------------------------------------*/
+/*LINKS*/
+/*----------------------------------------------------*/
+
+
+
+/*----------------------------------------------------*/
+/*HEADER-CONTAINER*/
+/*----------------------------------------------------*/
+
+.box-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.431)), url(../imgs/bush_lights.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+.box-header .row {
+    height: 50vh;
+    
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    height: 50vh;
+}
+
+.logo-first {
+    height: 150px;
+    width: 150px;
+    margin: 8% 0%;
+    border-radius: 50%;
+}
+
+
+/*----------------------------------------------------*/
+/*NAVIGATION*/
+/*----------------------------------------------------*/
+
+.navbar ul li{
+    list-style: none;
+    text-decoration: none;
+    flex-direction: row;
+    
+}
+
+.box-nav {
+    display: flex;
+    background-color: rgb(187, 187, 42, 0.9);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 4px 0px lightgray;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.btn-group {
+    display: flex;
+    height: 45px;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    outline: none;
+}
+
+.btn-group .button {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(187, 187, 42, 0.2);
+    border: none;
+    padding: 15px 12px;
+    font-size: 80%;
+    font-weight: 200;
+    cursor: pointer;
+    float: left;
+    outline: none;
+} 
+
+.btn-group .active {
+    background-color:rgba(76, 175, 79, 0.781);
+}
+
+.btn-group .space {
+    width: 150px;
+    background-color: rgba(125, 155, 155, 0.397);
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-group .button li a {
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*for icons in the button.*/
+.navbar .btn-group a .button {
+    display: inline-flex;
+    text-align: center;
+    margin-left: 5px;
+    font-size: 90%;
+    color: #fff;
+}
+
+.navbar .btn-group a .sign-up .fa-user {
+    display: inline-flex;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    padding: 2px;
+    text-align: center;
+    margin-top: -5px;
+
+}
+
+.btn-group .button:hover {
+    background-color: rgb(108, 101, 1);
+}
+
+.btn-group .active:hover {
+    background-color: rgb(116, 116, 10);
+}
+.btn-group .space:hover {
+    background-color: rgba(76, 175, 79, 0.781);
+}
+
+.find-us {
+    width: 5px;
+    height: 5px;
+}
+
+
+/*----------------------------------------------------*/
+/*SECTION SEARCH*/
+/*----------------------------------------------------*/
+
+.box-search {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-gif,
+.search-house,
+.search-icon {
+    height: 50px;
+}
+
+.search-icon a i {
+    display: flex;
+    text-align: center
+}
+
+.search-icon a .fa-cloud {
+    margin-right: 10px;
+    color: rgba(0, 0, 255, 0.513);
+}
+
+.search-icon a .fa-clock {
+    margin-left: 10px;
+    color: rgb(187, 187, 42);
+}
+
+.gif-image {
+    display: flex;
+}
+
+.search-house {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 50%;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 30px;
+    font-size: 70%;
+    font-weight: 600;
+    margin: 10px 0;
+    width: 100%;
+
+}
+
+#search {
+    width: 100%;
+    outline: none;
+    padding: 5px 7px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: rgb(187, 187, 42);
+    text-transform: capitalize;
+}
+
+.submit-btn {
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+/*----------------------------------------------------*/
+/*MAIN-BODY-SECTION*/
+/*----------------------------------------------------*/
+.main-section {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.575), rgba(255, 255, 255, 0.246)), url(../imgs/bush_lights.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: -5px -5px 22px grey;
+
+}
+
+
+/*for h2 ...the main section for heading TITLE.... */
+.main-section .heading {
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+
+.main-section .col-sm-6 {
+    background-color: rgba(187, 187, 42, 0.5);
+    margin: 9px 0px 9px;
+    box-shadow: 4px 4px 4px 4px grey;
+    color: #fff;
+}
+
+.main-section .col-sm-6:hover {
+    background-color: rgb(187, 187, 42, 0.8);
+    color: rgb(255, 67, 67);
+}
+ 
+.box {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*----------ASIDE COMPONENTS-------*/
+.col-sm-6 .aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 30%;
+}
+
+.aside .captain-img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(187, 187, 42, 0.5);
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.aside h3 {
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+/*---for the icons under the aside image*/
+.aside .sign-up {
+    display: flex;
+    list-style: none;
+    font-size: 150%;
+    margin-bottom: 3%;
+}
+
+.aside .sign-up li a {
+    margin-left: 22px;
+    color: rgb(160, 93, 93);
+}
+
+.aside .sign-up li a:hover {
+    color: #4CAF50;
+}
+/*---for the paragraph under the aside image*/
+
+.long-copy {
+    font-size: 80%;
+    font-weight: 80;
+    word-spacing: 2px;
+    text-align: center
+}
+
+
+
+/*----------MAIN COMPONENTS-------*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+}
+
+.box .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* main section housing amd aside section housing*/
+.house-items,
+.gift-items {
+    display: flex;
+    margin: 10px 0;
+}
+.house-items img,
+.gift-items img {
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px rgb(250, 63, 63);
+}
+
+/*---images in the maiin section---*/
+.card {
+    width: 100%;
+}
+.card img {
+    width: 100px;
+    height: auto;
+}
+.food {
+    width: 80%;
+}
+.card ul img {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*----------------------------------------------------*/
+/* SECTION-WHAT I CAN DO------ABILITY*/
+/*----------------------------------------------------*/
+
+.section-ability {
+   /* background-image: linear-gradient(rgba(240, 240, 240, 0.8), rgba(240, 240, 240, 0.8)), url(../imgs/construct.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: -5px -5px 2px grey;
+}
+
+.section-ability .ability-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.ability {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 10%;
+}
+
+
+
+/* will be styled during queries*//*
+.common-space {
+
+}*/
+
+
+
+.ability h3 {
+    text-align: center;
+    margin-bottom: 10%;
+    color: rgb(108, 101, 1);
+    font-weight: 600;
+    text-shadow:  4px 4px 4px #fff;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+
+.ability .common-space a {
+    text-decoration: none;
+    outline: none;
+
+}
+
+.ability img {
+    width: 150px;
+    height: 150px;
+    margin: 7px 0;
+    box-shadow: -4px -4px 4px 4px rgb(235, 160, 160);
+    border-radius: 8px;
+    opacity: 0.5;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transition: transform 0.5s;
+    -webkit-transition:  -webkit-transform 0.5s;
+    -ms-transition:  -ms-transform 0.5s;
+}
+
+.ability img:hover {
+    opacity: 1;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    
+}
+.btn {
+    background-color: rgb(192, 125, 125);
+    color: #fff;
+    font-style: italic;
+    font-weight: 600;
+    margin: 15px 0;
+    padding: 5px;
+    border: 2px solid rgb(235, 160, 160);
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 2px grey;
+    transition: background-color 0.5s, color 0.9s;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: rgb(187, 187, 42);
+    color: rgb(108, 101, 1);
+}
+
+/*----------------------------------------------------*/
+/* SECTION-CITY*/
+/*----------------------------------------------------*/
+
+
+.section-cities {
+    background-image: linear-gradient(rgba(226, 179, 179, 0.9), rgba(224, 195, 142, 0.7), rgba(129, 129, 214, 0.678)), url(../imgs/house-white.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    box-shadow: -5px -5px 22px grey;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.city-heading h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+
+
+.section-cities .col-sm-6 {
+    display: flex;
+}
+
+.city-details { 
+    margin-bottom: 3%;
+}
+.city-details img { 
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 4px rgb(187, 187, 42, 0.5);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transition: transform 0.5s;
+    -webkit-transition:  -webkit-transform 0.5s;
+    -ms-transition:  -ms-transform 0.5s;
+}
+
+.city-details img:hover {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+}
+
+
+
+.list-details ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 90%;
+    color: #555;
+    text-shadow: 4px 2px 3px grey;
+    word-spacing: 2px;
+    list-style: none; 
+    line-height: 1.5;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transition: transform 0.2s;
+    -webkit-transition:  -webkit-transform 0.2s;
+    -ms-transition:  -ms-transform 0.2s;
+}
+
+.list-details ul:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+
+}
+
+/*----------------------------------------------------*/
+/* SECTION-CAN WORK WITH*/
+/*----------------------------------------------------*/
+
+.slideshow {
+    margin: 3% auto;
+    height: 500px;
+    overflow: hidden;
+}
+
+.cen {
+    position: relative;
+}
+.design {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+}
+
+.design .tool {
+    margin: 2px 4px 0 4px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.tool:hover {
+    background-color: aqua;
+}
+
+input[name=p] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(to right, red, orange, blue);
+}
+
+.slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    transition: 0.5s; 
+    padding: 0 10px;
+}
+.slide img {
+    margin-top: 10px;
+    width: 90%;
+    height: 70%;
+}
+.slide h3 {
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin: 2px 0 2px 0;
+}
+
+.slide span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.slide p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#c1:checked ~ .pc1 {
+    margin-left: 0;
+}
+#c2:checked ~ .pc1 {
+    margin-left: -20%;
+}
+#c3:checked ~ .pc1 {
+    margin-left: -40%;
+}
+#c4:checked ~ .pc1 {
+    margin-left: -60%;
+}
+#c5:checked ~ .pc1 {
+    margin-left: -80%;
+}
+#c6:checked ~ .pc1 {
+    margin-left: -100%;
+}
+
+
+
+
+/*----------------------------------------------------*/
+/* SECTION-CAN WORK WITH*/
+/*----------------------------------------------------*/
+
+.section-peoples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(187, 187, 42, 0.5);
+
+}
+
+.section-peoples .people-heading {
+    margin: 5% 0 5% 0;
+}
+
+.work-with {
+    margin-bottom: 2%;
+    text-align: center;
+}
+.work-with h3{
+    margin-top: 5px;
+}
+.work-with .col-sm-3{
+box-shadow: 4px 4px 4px 4px grey;
+}
+
+.work-with .col-sm-3:hover {
+background-color: rgb(187, 187, 42, 0.8);
+color: rgb(255, 67, 67);
+}
+
+.card-box {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.card-box:hover {
+    border: 1px solid rgb(255, 67, 67);
+}
+
+.ads-box {
+    border: 1px solid rgb(116, 116, 10);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/*----------------------------------------------------*/
+/* SECTION-CITY*/
+/*----------------------------------------------------*/
+
+.sponsors {/*
+    background-image: linear-gradient(rgba(240, 240, 240, 0.8), rgba(240, 240, 240, 0.8)), url(../imgs/construct.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px -5px 2px grey;
+
+}
+
+.sponsors .sponsor-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.sponsor-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+.team-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+}
+
+
+.team-box ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+
+.team-box ul img {
+    width: 100px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 0px 25px 20px 9px;
+
+}
+
+.team-box ul li {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.team-box ul li a {
+    text-decoration: none;
+    border: none;
+    margin-right: 9px;
+}
+
+.team-box ul li a:hover {
+    color: rgb(108, 101, 1);
+    border-bottom: 2px solid rgb(108, 101, 1);
+    padding-bottom: 2px;
+}
+
+.ads-box {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ads-box img {
+    width: 200px;
+    height: 400px;
+    margin-right: 10px;
+}
+
+
+/*----------------------------------------------------*/
+/* SECTION-CITY*/
+/*----------------------------------------------------*/
+
+
+.section-comments {
+    background-image: linear-gradient(rgba(226, 179, 179, 0.9), rgba(224, 195, 142, 0.7), rgba(129, 129, 214, 0.678)), url(../imgs/house-white.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.workdone-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7% 0 3% 0;
+}
+
+.comments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comments:last-of-type {
+    margin-bottom: 3%;
+}
+
+.comments img {
+    height: 100px;
+    width: auto;
+    margin: 0 2% 3% 20%;
+    border-radius: 50%;
+}
+
+
+.comments a {
+    vertical-align: 50px;
+    text-decoration: none;
+    border: none;
+}
+
+.comments a:hover {
+    color: rgb(108, 101, 1);
+    border-bottom: 2px solid rgb(108, 101, 1);
+    padding-bottom: 2px;
+}
+
+blockquote {
+    font-size: 90%;
+    font-weight: 600;
+    color: rgb(108, 101, 1);
+}
+
+.comments p {
+    font-size: 90%;
+    font-weight: 600;
+    color: rgb(108, 101, 1);
+    text-align: center;
+}
+
+.comments blockquote span a {
+    color: orangered;
+}
+
+
+
+.comments p span a {
+    color: yellow;
+    font-size: 70%;
+}
+
+.comments p span a:hover {
+    color: orangered;
+    border-bottom: 2px solid orangered;
+    padding-bottom: 2px;
+}
+
+.comments blockquote span a:hover {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+
+/*----------------------------------------------------*/
+/* SECTION-CITY*/
+/*----------------------------------------------------*/
+
+.contact-form {
+    background-color: rgb(187, 187, 42, 0.5);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+.form-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7% 3% 2% 3%;
+    width: 100%;
+}
+
+.contact-form p {
+    font-size: 70%;
+    color: orangered;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: rgb(108, 101, 1);
+}
+
+label,
+input[type=text],
+input[type=email],
+input[type=password],
+select,
+textarea {
+    width: 60%;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    outline: none;
+}
+
+input[type=checkbox] {
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.form-field .btn {
+    padding: 10px;
+    font-size: 90%;
+}
+
+
+
+
+/*-----------buttons bfor the footer------*/
+.boss-bt {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+}
+.boss-btn .click,
+.boss-btn .move {
+    padding: 10px;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px ;
+    color: rgb(108, 101, 1);
+}
+
+.boss-btn .click {
+    float: left;
+    font-size: 90%;
+}
+
+.boss-btn .move {
+    float: right;
+    font-size: 80%;
+}
+
+.boss-btn .click:hover {
+    background-color: orangered;
+    color: blueviolet;
+
+}
+
+.boss-btn .move:hover {
+    background-color: blueviolet;
+    color: orangered;
+}
+
+/*----------------------------------------------------*/
+/* SECTION-FOOTER*/
+/*----------------------------------------------------*/
+
+.footer {
+    background-image: linear-gradient(rgba(226, 179, 179, 0.9), rgba(224, 195, 142, 0.7), rgba(129, 129, 214, 0.678)), url(../imgs/siteing.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
